@@ -29,17 +29,20 @@ If the label is 1, it means that person is likely to be excessive absenteeism an
 ## Results
 &nbsp;&nbsp;&nbsp;&nbsp;After we do backward elimiation and adjust the Logistic Regression model. We achieve <b>75% accuracy</b> on test set. This is not bad at all from our points of view because this is not some usual tasks to predict behavior.  
     
-&nbsp;&nbsp;&nbsp;&nbsp;This is the 'Age vs Probability of being excessive absenteeism' visualization from Tableau. We used mean of probability for each age to plot this graph.  
+&nbsp;&nbsp;&nbsp;&nbsp;The graph below is the <b>'Age vs Probability of being excessive absenteeism'</b> visualization from Tableau. We used mean of probability for each age to plot this graph.  
+  
 &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Interpretation:</u></b> We can barely see the <b>weak linear uptrend correlation</b>. We might unconfidently say that age affect the absenteeism behavior; the higher age ones are, the higher probability ones will be excessive absenteeism. However, we might need more data to confidently confirm this hypothesis.
   
 ![Age vs Prob](./images/tableau1.jpg)  
   
-&nbsp;&nbsp;&nbsp;&nbsp;The second visualization is 'Reasons vs Probability of being excessive absenteeism'. This one is have a good insight.  
+&nbsp;&nbsp;&nbsp;&nbsp;The second visualization, the graph below, is <b>'Reasons vs Probability of being excessive absenteeism'</b>. This one is have a good insight.  
+  
 &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Interpretation:</u></b> Employees who are absent because of reasons in group 1 have <b>over 50%</b> probability of being excessive absenteeism, on the other hand employees who are not absent with reasons in group 1 have <b>less than 50%</b> probability of being excessive absenteeism. This makes very much sense because the first reason group is <b>'Diseases'</b> group. If ones have diseases, ones have to be absent from works to see doctor especially those employees who have long-term diseases. Sadly for reason group 2 and 3, we can tell nothing, the results are <b>distributed all over equally</b>. We might collect more data to see the insight from these 2 group. For the group 4, we can see that employees who are absent due to these reasons in group 4 have <b>less than 50%</b> probability to be excessively absenteeism. This is intuitive because th reasons in group 4 are 'Light reasons'. These reasons won't have any physical or mental damage, so it won't affect the work at all.  
   
 ![Reason vs Prob](./images/tableau2.jpg)  
   
-&nbsp;&nbsp;&nbsp;&nbsp;The last visualization is 'Transportation Expense&Childs vs Probability of being excessive absenteeism'. For this graph, we plot Transpartation Expense against the probability , and we use color and size of data dots to represent no. of childs.  
+&nbsp;&nbsp;&nbsp;&nbsp;The last visualization, the graph below, is <b>'Transportation Expense&Childs vs Probability of being excessive absenteeism'</b>. For this graph, we plot Transpartation Expense against the probability , and we use color and size of data dots to represent no. of childs.  
+  
 &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Interpretation:</u></b> We can see a very very <b>weak uptrend linear correlation</b> again. We can unconfidently say the higher tranportation, the higher ones will be excessive absenteeism. However we need more data to confirm this hypothesis. For no. of child, the distribution is spread out all over, we cannot see any correlation clearly. But there is a employee who have 3 childs has very high probability of being excessive absenteeism. This is an <b>outlier</b> in our data. Anyways, it is a good clue that if we collect more data and gather more employees who have 3 childs, we might see some insight.  
   
 ![Transport&Child vs Prob](./images/tableau3.jpg)
